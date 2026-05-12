@@ -17,7 +17,7 @@ import { predictionService } from "@/services/predictionService";
 export default function HomePage() {
   const matches = fixtureService.getUpcomingMatches(5);
   const summary = predictionService.getMyPredictionSummary();
-  const topEntries = leaderboardService.getTopEntries(10);
+  const topEntries = leaderboardService.getTopEntries(6);
 
   return (
     <AppShell>
@@ -29,10 +29,9 @@ export default function HomePage() {
           <MyPredictionSummary summary={summary} />
         </section>
 
-        <section className="grid gap-4 xl:grid-cols-[1.25fr_0.75fr]">
-          <Leaderboard entries={topEntries} />
-          <PrivateLeagues leagues={mockLeagues} />
-        </section>
+        <Leaderboard entries={topEntries} />
+
+        <PrivateLeagues leagues={mockLeagues} />
 
         <section className="grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
           <BadgesSection badges={mockBadges} />
