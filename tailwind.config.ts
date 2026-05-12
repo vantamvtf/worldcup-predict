@@ -10,21 +10,22 @@ const config: Config = {
       colors: {
         wc: {
           primaryGold: "#C98A13",
-          goldLight: "#E5B94F",
-          deepGreen: "#0B6B3A",
+          goldLight: "#E4B64A",
+          goldDark: "#9E6808",
+          green: "#0B6B3A",
+          greenDark: "#064F2D",
           softGreen: "#EAF7EF",
-          textDark: "#0F1F1A",
+          textDark: "#10201A",
+          textMuted: "#66736C",
           borderSoft: "#EADFCB",
           bgWarm: "#FBFAF6",
-          card: "#FFFFFF"
+          card: "#FFFFFF",
+          deepGreen: "#0B6B3A"
         }
       },
       boxShadow: {
-        card: "0 12px 30px rgba(101, 79, 35, 0.08)",
-        nav: "0 10px 20px rgba(52, 39, 17, 0.08)"
-      },
-      backgroundImage: {
-        hero: "radial-gradient(circle at 82% 20%, rgba(201,138,19,0.18), transparent 45%), radial-gradient(circle at 15% 85%, rgba(11,107,58,0.12), transparent 40%)"
+        card: "0 10px 24px rgba(42, 34, 18, 0.08)",
+        nav: "0 10px 28px rgba(70, 54, 24, 0.1)"
       }
     }
   },
