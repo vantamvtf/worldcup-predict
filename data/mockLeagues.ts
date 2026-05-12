@@ -19,7 +19,7 @@ export const mockLeagues: League[] = [
   },
   {
     id: "l3",
-    name: "Cafe bóng đá Quận 1",
+    name: "Cafe bóng đá",
     memberCount: 121,
     userRank: 3,
     inviteCode: "CAFEQ1",

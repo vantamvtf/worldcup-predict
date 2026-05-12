@@ -20,5 +20,29 @@ export const fixtureService = {
       homeTeam: teamMap.get(match.homeTeamId)!,
       awayTeam: teamMap.get(match.awayTeamId)!
     }));
+  },
+
+  getMatchById(matchId: string): MatchWithTeams | null {
+    const match = mockMatches.find((item) => item.id === matchId);
+    if (!match) {
+      return null;
+    }
+
+    return {
+      ...match,
+      homeTeam: teamMap.get(match.homeTeamId)!,
+      awayTeam: teamMap.get(match.awayTeamId)!
+    };
+  },
+
+  getOtherMatches(matchId: string, limit = 4): MatchWithTeams[] {
+    return mockMatches
+      .filter((match) => match.id !== matchId)
+      .slice(0, limit)
+      .map((match) => ({
+        ...match,
+        homeTeam: teamMap.get(match.homeTeamId)!,
+        awayTeam: teamMap.get(match.awayTeamId)!
+      }));
   }
 };

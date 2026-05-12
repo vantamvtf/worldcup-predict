@@ -29,9 +29,9 @@ export const mockPredictions: Prediction[] = [
 
 export const mockPredictionSummary: PredictionSummary = {
   totalSubmitted: 36,
-  correctResults: 20,
-  exactScoreHits: 7,
-  currentPoints: 164,
+  correctResults: 16,
+  exactScoreHits: 5,
+  currentPoints: 186,
   currentRank: 12
 };
 
