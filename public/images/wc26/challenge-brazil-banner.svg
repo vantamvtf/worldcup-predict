@@ -1,0 +1,24 @@
+<svg width="920" height="260" viewBox="0 0 920 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="920" y2="260" gradientUnits="userSpaceOnUse"><stop stop-color="#063B24"/><stop offset="0.55" stop-color="#0B6B3A"/><stop offset="1" stop-color="#10201A"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#F5D46A"/><stop offset="1" stop-color="#C98A13"/></linearGradient>
+    <radialGradient id="spot" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(560 100) scale(300 180)"><stop stop-color="#F5D46A" stop-opacity="0.28"/><stop offset="1" stop-color="#F5D46A" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="920" height="260" rx="28" fill="url(#bg)"/>
+  <rect width="920" height="260" rx="28" fill="url(#spot)"/>
+  <path d="M0 210C190 160 340 162 500 198C650 232 780 210 920 150" stroke="#E4B64A" stroke-width="16" opacity="0.42"/>
+  <path d="M0 232C210 190 355 195 510 225C665 255 790 238 920 198" stroke="#0B6B3A" stroke-width="44" opacity="0.6"/>
+  <circle cx="720" cy="106" r="64" fill="#F5D46A" opacity="0.12"/>
+  <circle cx="720" cy="106" r="34" fill="#F5D46A" opacity="0.16"/>
+  <path d="M704 52c44 18 70 66 56 110-12 38-49 58-89 46-42-12-64-50-54-90 11-46 45-77 87-66Z" fill="#E8D6B0" opacity="0.22"/>
+  <path d="M688 132l55-37 24 12-59 57-36 42-26-12 42-62Z" fill="#F6D13E" opacity="0.78"/>
+  <circle cx="668" cy="88" r="21" fill="#F1B33B"/>
+  <path d="M632 222c24-43 48-66 80-73l25 13c-17 43-45 69-82 82l-23-22Z" fill="#F4D442"/>
+  <text x="42" y="62" fill="#F5D46A" font-family="Inter,Arial" font-size="20" font-weight="700">Thử thách dự đoán đặc biệt</text>
+  <text x="42" y="116" fill="white" font-family="Inter,Arial" font-size="44" font-weight="900">Brazil 2-1 Morocco</text>
+  <text x="42" y="154" fill="white" fill-opacity="0.86" font-family="Inter,Arial" font-size="22" font-weight="600">Giải cảm xúc · Hãy dự đoán tỷ số bàn thắng cuối cùng!</text>
+  <rect x="42" y="184" width="170" height="44" rx="12" fill="url(#gold)"/>
+  <text x="66" y="213" fill="white" font-family="Inter,Arial" font-size="16" font-weight="800">Tham gia thử thách</text>
+  <rect x="228" y="184" width="134" height="44" rx="12" fill="white" fill-opacity="0.12" stroke="white" stroke-opacity="0.24"/>
+  <text x="250" y="213" fill="#F5D46A" font-family="Inter,Arial" font-size="16" font-weight="800">Còn 12:45:30</text>
+</svg>
