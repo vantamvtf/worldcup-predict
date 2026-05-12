@@ -1,0 +1,31 @@
+<svg width="720" height="420" viewBox="0 0 720 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(480 145) rotate(112) scale(250 330)">
+      <stop stop-color="#2A8A52"/>
+      <stop offset="0.55" stop-color="#0B6B3A"/>
+      <stop offset="1" stop-color="#063B24"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="440" y1="54" x2="570" y2="310" gradientUnits="userSpaceOnUse"><stop stop-color="#FFF0A8"/><stop offset="0.5" stop-color="#D79B19"/><stop offset="1" stop-color="#805000"/></linearGradient>
+    <linearGradient id="btn" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E4B64A"/><stop offset="1" stop-color="#C98A13"/></linearGradient>
+  </defs>
+  <rect width="720" height="420" rx="32" fill="#063B24"/>
+  <rect width="720" height="420" rx="32" fill="url(#glow)"/>
+  <path d="M270 300C390 340 500 330 655 240" stroke="#0B6B3A" stroke-width="52" stroke-linecap="round"/>
+  <path d="M280 326C410 360 520 342 660 268" stroke="#E4B64A" stroke-width="16" stroke-linecap="round"/>
+  <path d="M70 64h250" stroke="white" stroke-opacity="0.08" stroke-width="2"/>
+  <text x="52" y="96" fill="white" font-family="Inter,Arial" font-size="42" font-weight="800">Dự đoán</text>
+  <text x="52" y="146" fill="#E4B64A" font-family="Inter,Arial" font-size="38" font-weight="800">World Cup 2026</text>
+  <text x="52" y="194" fill="white" font-family="Inter,Arial" font-size="42" font-weight="800">cùng bạn bè</text>
+  <text x="52" y="238" fill="white" fill-opacity="0.82" font-family="Inter,Arial" font-size="20">Chọn tỉ số, đua bảng xếp hạng,</text>
+  <text x="52" y="268" fill="white" fill-opacity="0.82" font-family="Inter,Arial" font-size="20">tạo league riêng cho nhóm của bạn.</text>
+  <rect x="52" y="305" width="178" height="54" rx="15" fill="url(#btn)"/>
+  <text x="82" y="339" fill="white" font-family="Inter,Arial" font-size="18" font-weight="700">Dự đoán ngay</text>
+  <g opacity="0.9"><rect x="458" y="72" width="8" height="18" rx="2" transform="rotate(-20 458 72)" fill="#E4B64A"/><rect x="620" y="96" width="7" height="17" rx="2" transform="rotate(25 620 96)" fill="#C98A13"/><rect x="364" y="80" width="5" height="14" rx="2" transform="rotate(16 364 80)" fill="#F5D46A"/></g>
+  <g>
+    <path d="M468 58h91c-2 59-14 101-36 129v46h32v31h-84v-31h32v-46c-21-28-34-70-35-129Z" fill="url(#gold)"/>
+    <path d="M469 72c-43 2-61 26-52 62 10 39 37 58 78 60l2-30c-29-1-47-13-53-37-4-19 5-31 25-34v-21Zm89 0c43 2 61 26 52 62-10 39-37 58-78 60l-2-30c29-1 47-13 53-37 4-19-5-31-25-34v-21Z" fill="url(#gold)" opacity="0.95"/>
+    <ellipse cx="514" cy="65" rx="41" ry="20" fill="#FFF1A3" opacity="0.45"/>
+    <path d="M477 276h75l20 35H457l20-35Z" fill="#0B6B3A"/>
+    <rect x="485" y="284" width="60" height="10" rx="5" fill="#E4B64A"/>
+  </g>
+</svg>
