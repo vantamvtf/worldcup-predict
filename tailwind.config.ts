@@ -9,18 +9,22 @@ const config: Config = {
     extend: {
       colors: {
         wc: {
-          navy: "#081226",
-          card: "#0f1b32",
-          green: "#22c55e",
-          gold: "#f7c948",
-          soft: "#9fb0cb"
+          primaryGold: "#C98A13",
+          goldLight: "#E5B94F",
+          deepGreen: "#0B6B3A",
+          softGreen: "#EAF7EF",
+          textDark: "#0F1F1A",
+          borderSoft: "#EADFCB",
+          bgWarm: "#FBFAF6",
+          card: "#FFFFFF"
         }
       },
       boxShadow: {
-        card: "0 10px 30px rgba(2, 6, 23, 0.45)"
+        card: "0 12px 30px rgba(101, 79, 35, 0.08)",
+        nav: "0 10px 20px rgba(52, 39, 17, 0.08)"
       },
       backgroundImage: {
-        hero: "radial-gradient(circle at top right, rgba(34,197,94,0.28), transparent 42%), radial-gradient(circle at top left, rgba(247,201,72,0.2), transparent 45%)"
+        hero: "radial-gradient(circle at 82% 20%, rgba(201,138,19,0.18), transparent 45%), radial-gradient(circle at 15% 85%, rgba(11,107,58,0.12), transparent 40%)"
       }
     }
   },

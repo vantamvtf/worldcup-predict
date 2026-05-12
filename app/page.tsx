@@ -5,35 +5,42 @@ import { HeroSection } from "@/components/hero-section";
 import { Leaderboard } from "@/components/leaderboard";
 import { MyPredictionSummary } from "@/components/my-prediction-summary";
 import { PrivateLeagues } from "@/components/private-leagues";
+import { ScoringRulesStrip } from "@/components/scoring-rules-strip";
 import { ShareCardPreview } from "@/components/share-card-preview";
 import { UpcomingMatches } from "@/components/upcoming-matches";
 import { mockBadges } from "@/data/mockBadges";
 import { mockLeagues } from "@/data/mockLeagues";
-import { scoringRules } from "@/data/mockPredictions";
 import { fixtureService } from "@/services/fixtureService";
 import { leaderboardService } from "@/services/leaderboardService";
 import { predictionService } from "@/services/predictionService";
 
 export default function HomePage() {
-  const matches = fixtureService.getUpcomingMatches(8);
+  const matches = fixtureService.getUpcomingMatches(5);
   const summary = predictionService.getMyPredictionSummary();
   const topEntries = leaderboardService.getTopEntries(10);
 
   return (
     <AppShell>
-      <div className="space-y-6">
+      <div className="space-y-5 lg:space-y-6">
         <HeroSection />
-        <MyPredictionSummary summary={summary} scoringRules={scoringRules} />
-        <UpcomingMatches matches={matches} />
 
-        <div className="grid gap-6 xl:grid-cols-[1.15fr_0.85fr]">
+        <section className="grid gap-4 xl:grid-cols-[1.5fr_0.7fr]">
+          <UpcomingMatches matches={matches} />
+          <MyPredictionSummary summary={summary} />
+        </section>
+
+        <section className="grid gap-4 xl:grid-cols-[1.25fr_0.75fr]">
           <Leaderboard entries={topEntries} />
-          <ShareCardPreview />
-        </div>
+          <PrivateLeagues leagues={mockLeagues} />
+        </section>
 
-        <PrivateLeagues leagues={mockLeagues} />
+        <section className="grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
+          <BadgesSection badges={mockBadges} />
+          <ShareCardPreview />
+        </section>
+
         <CafeLeaguePromo />
-        <BadgesSection badges={mockBadges} />
+        <ScoringRulesStrip />
       </div>
     </AppShell>
   );

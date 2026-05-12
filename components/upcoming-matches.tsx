@@ -7,14 +7,14 @@ interface UpcomingMatchesProps {
 
 export function UpcomingMatches({ matches }: UpcomingMatchesProps) {
   return (
-    <section className="space-y-4">
+    <section className="wc-card space-y-4 p-4 sm:p-5">
       <div className="flex items-center justify-between">
-        <h2 className="text-xl font-bold">Trận sắp diễn ra</h2>
-        <a href="#" className="text-sm text-wc-green hover:underline">
-          Xem toàn bộ lịch
+        <h2 className="text-lg font-bold text-wc-textDark sm:text-xl">Trận đấu sắp tới</h2>
+        <a href="#" className="text-sm font-semibold text-wc-deepGreen hover:underline">
+          Xem tất cả &gt;
         </a>
       </div>
-      <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+      <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-5">
         {matches.map((match) => (
           <MatchCard key={match.id} match={match} />
         ))}

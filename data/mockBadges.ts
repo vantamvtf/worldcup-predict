@@ -3,32 +3,32 @@ import { Badge } from "@/lib/types";
 export const mockBadges: Badge[] = [
   {
     id: "b1",
-    title: "Đoán đúng tỉ số",
-    description: "3 lần đoán chính xác trong 1 tuần",
-    icon: "🎯"
+    title: "Vua tỉ số",
+    description: "Đoán chuẩn tỉ số nhiều trận nhất",
+    icon: "👑"
   },
   {
     id: "b2",
-    title: "Top 1 hôm nay",
-    description: "Dẫn đầu điểm số trong ngày",
+    title: "Top 1 hệ thống",
+    description: "Đứng đầu bảng xếp hạng toàn hệ thống",
     icon: "🥇"
   },
   {
     id: "b3",
-    title: "Chuỗi 5 trận có điểm",
-    description: "Giữ phong độ ổn định qua 5 trận",
+    title: "Chuỗi 5 trận",
+    description: "Liên tiếp 5 trận đều có điểm",
     icon: "🔥"
   },
   {
     id: "b4",
-    title: "Fan trung thành",
-    description: "Luôn dự đoán đội yêu thích",
-    icon: "💚"
+    title: "Dự đoán thủ",
+    description: "Tối ưu điểm số bằng dự đoán an toàn",
+    icon: "🛡️"
   },
   {
     id: "b5",
-    title: "Chuyên gia hòa",
-    description: "Dự đoán hòa chính xác nhiều nhất",
-    icon: "🤝"
+    title: "Chuyên gia AI",
+    description: "Có tỉ lệ dự đoán chính xác ổn định",
+    icon: "🤖"
   }
 ];

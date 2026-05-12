@@ -2,42 +2,56 @@ import { PredictionSummary } from "@/lib/types";
 
 interface MyPredictionSummaryProps {
   summary: PredictionSummary;
-  scoringRules: string[];
 }
 
-const summaryItems: Array<{ key: keyof PredictionSummary; label: string }> = [
-  { key: "totalSubmitted", label: "Dự đoán đã gửi" },
-  { key: "correctResults", label: "Đúng kết quả" },
-  { key: "exactScoreHits", label: "Đúng tỉ số" },
-  { key: "currentPoints", label: "Điểm hiện tại" },
-  { key: "currentRank", label: "Hạng hiện tại" }
+const quickStats = [
+  { label: "Xếp hạng chung", value: "28" },
+  { label: "Dự đoán đúng", value: "16" },
+  { label: "Đúng tỉ số", value: "5" }
 ];
 
-export function MyPredictionSummary({ summary, scoringRules }: MyPredictionSummaryProps) {
+export function MyPredictionSummary({ summary }: MyPredictionSummaryProps) {
   return (
-    <section className="grid gap-4 lg:grid-cols-[1.2fr_1fr]">
-      <article className="rounded-2xl border border-white/10 bg-wc-card p-5 shadow-card">
-        <h2 className="text-lg font-bold text-white">Dự đoán của tôi</h2>
-        <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-5">
-          {summaryItems.map((item) => (
-            <div key={item.key} className="rounded-xl border border-white/10 bg-[#0a1428] p-3">
-              <p className="text-xs text-slate-400">{item.label}</p>
-              <p className="mt-1 text-xl font-extrabold text-white">{summary[item.key]}</p>
-            </div>
-          ))}
-        </div>
-      </article>
+    <section className="wc-card p-4 sm:p-5">
+      <h2 className="text-lg font-bold text-wc-textDark">Dự đoán của tôi</h2>
 
-      <article className="rounded-2xl border border-wc-gold/30 bg-gradient-to-br from-[#1c2238] to-[#19162b] p-5 shadow-card">
-        <h3 className="text-sm font-semibold uppercase tracking-wide text-wc-gold">Luật tính điểm</h3>
-        <ul className="mt-3 space-y-2">
-          {scoringRules.map((rule) => (
-            <li key={rule} className="text-xs text-slate-200 sm:text-sm">
-              • {rule}
-            </li>
-          ))}
-        </ul>
-      </article>
+      <div className="mt-4 flex items-center gap-3">
+        <div className="h-12 w-12 rounded-full bg-[#f2e4cd]" />
+        <div>
+          <p className="text-sm font-bold text-wc-textDark">Tam Nguyen</p>
+          <span className="inline-flex rounded-full border border-[#d6e9dc] bg-[#edf7f1] px-2 py-0.5 text-[11px] font-medium text-wc-deepGreen">
+            Fan Argentina
+          </span>
+        </div>
+      </div>
+
+      <div className="mt-4 grid grid-cols-3 gap-2">
+        {quickStats.map((item) => (
+          <div key={item.label} className="rounded-xl border border-wc-borderSoft bg-[#fefcf8] p-2 text-center">
+            <p className="text-[11px] text-[#6f7d72]">{item.label}</p>
+            <p className="text-lg font-extrabold text-wc-textDark">{item.value}</p>
+          </div>
+        ))}
+      </div>
+
+      <div className="mt-4 grid grid-cols-3 gap-2 text-center">
+        <div className="rounded-xl border border-wc-borderSoft bg-white p-2">
+          <p className="text-[11px] text-[#6f7d72]">Điểm hiện tại</p>
+          <p className="text-lg font-black text-wc-textDark">{summary.currentPoints}</p>
+        </div>
+        <div className="rounded-xl border border-wc-borderSoft bg-white p-2">
+          <p className="text-[11px] text-[#6f7d72]">Xếp hạng</p>
+          <p className="text-lg font-black text-wc-textDark">#{summary.currentRank}</p>
+        </div>
+        <div className="rounded-xl border border-wc-borderSoft bg-white p-2">
+          <p className="text-[11px] text-[#6f7d72]">Badge</p>
+          <p className="text-lg font-black text-wc-primaryGold">Top 12%</p>
+        </div>
+      </div>
+
+      <div className="mt-4 h-1.5 overflow-hidden rounded-full bg-[#e4eee7]">
+        <div className="h-full w-2/3 rounded-full bg-wc-deepGreen" />
+      </div>
     </section>
   );
 }

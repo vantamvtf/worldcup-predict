@@ -39,7 +39,7 @@ export function PredictionInput({ matchId, disabled = false }: PredictionInputPr
           value={homeScore}
           onChange={(event) => setHomeScore(event.target.value)}
           disabled={disabled}
-          className="w-14 rounded-lg border border-white/20 bg-[#0a1428] px-2 py-1.5 text-center text-sm text-white outline-none transition focus:border-wc-green disabled:cursor-not-allowed disabled:opacity-60"
+          className="w-14 rounded-lg border border-wc-borderSoft bg-white px-2 py-1.5 text-center text-sm text-wc-textDark outline-none transition focus:border-wc-deepGreen disabled:cursor-not-allowed disabled:opacity-60"
           placeholder="-"
         />
         <span className="text-xs text-slate-400">:</span>
@@ -49,17 +49,12 @@ export function PredictionInput({ matchId, disabled = false }: PredictionInputPr
           value={awayScore}
           onChange={(event) => setAwayScore(event.target.value)}
           disabled={disabled}
-          className="w-14 rounded-lg border border-white/20 bg-[#0a1428] px-2 py-1.5 text-center text-sm text-white outline-none transition focus:border-wc-green disabled:cursor-not-allowed disabled:opacity-60"
+          className="w-14 rounded-lg border border-wc-borderSoft bg-white px-2 py-1.5 text-center text-sm text-wc-textDark outline-none transition focus:border-wc-deepGreen disabled:cursor-not-allowed disabled:opacity-60"
           placeholder="-"
         />
       </div>
 
-      <button
-        type="button"
-        onClick={savePrediction}
-        disabled={disabled || isSaving}
-        className="w-full rounded-xl bg-wc-green px-3 py-2 text-xs font-bold text-slate-950 transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-50"
-      >
+      <button type="button" onClick={savePrediction} disabled={disabled || isSaving} className="gold-primary w-full text-xs disabled:cursor-not-allowed disabled:opacity-50">
         {isSaving ? "Đang lưu..." : "Lưu dự đoán"}
       </button>
 
