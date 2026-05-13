@@ -7,6 +7,8 @@ interface AppShellProps {
   children: ReactNode;
 }
 
+const WC26_LOGO_SRC = "/images/wc26/logo-wc26-league.svg?v=2";
+
 const navItems = [
   { label: "Lịch đấu", href: "#" },
   { label: "Dự đoán", href: "/du-doan/m1" },
@@ -23,12 +25,13 @@ export function AppShell({ children }: AppShellProps) {
           <div className="hidden h-[68px] items-center rounded-2xl border border-wc-borderSoft bg-white px-5 shadow-nav md:grid md:grid-cols-[auto_1fr_auto] md:gap-4">
             <Link href="/" className="flex items-center">
               <Image
-                src="/images/wc26/logo-wc26-league.svg"
+                src={WC26_LOGO_SRC}
                 alt="WC26 League"
                 width={152}
                 height={38}
                 className="h-9 w-auto"
                 priority
+                unoptimized
               />
             </Link>
 
@@ -69,11 +72,12 @@ export function AppShell({ children }: AppShellProps) {
             </button>
             <Link href="/" className="flex items-center">
               <Image
-                src="/images/wc26/logo-wc26-league.svg"
+                src={WC26_LOGO_SRC}
                 alt="WC26 League"
                 width={126}
                 height={30}
                 className="h-7 w-auto"
+                unoptimized
               />
             </Link>
             <button
