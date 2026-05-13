@@ -3,6 +3,8 @@
 import { useState } from "react";
 import Image from "next/image";
 
+const WC26_CHALLENGE_BANNER_SRC = "/images/wc26/challenge-brazil-banner.svg?v=2";
+
 export function ShareCardPreview() {
   const [copied, setCopied] = useState(false);
 
@@ -15,10 +17,11 @@ export function ShareCardPreview() {
   return (
     <section className="relative overflow-hidden rounded-2xl border border-[#286347] p-5 text-white shadow-card">
       <Image
-        src="/images/wc26/challenge-brazil-banner.svg"
+        src={WC26_CHALLENGE_BANNER_SRC}
         alt="Thử thách dự đoán Brazil"
         fill
-        className="object-cover object-center"
+        className="object-cover"
+        unoptimized
       />
       <div className="absolute inset-0 bg-gradient-to-r from-[#0f3e2b]/88 to-[#0f4f33]/72" />
 

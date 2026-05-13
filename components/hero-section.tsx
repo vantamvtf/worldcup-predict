@@ -1,5 +1,8 @@
 import Image from "next/image";
 
+const WC26_HERO_DESKTOP_SRC = "/images/wc26/hero-desktop-bg.svg?v=2";
+const WC26_HERO_MOBILE_SRC = "/images/wc26/hero-mobile-bg.svg?v=2";
+
 const stats = [
   { value: "104", label: "Trận đấu" },
   { value: "48", label: "Đội tuyển" },
@@ -28,13 +31,14 @@ export function HeroSection() {
           </div>
         </div>
 
-        <div className="relative h-[300px] overflow-hidden rounded-3xl border border-[#e6d9bf] bg-[#f5efe4]">
+        <div className="relative h-[320px] overflow-hidden rounded-3xl border border-[#e6d9bf] bg-[#f5efe4]">
           <Image
-            src="/images/wc26/hero-desktop-bg.svg"
+            src={WC26_HERO_DESKTOP_SRC}
             alt="Hero World Cup 2026"
             fill
-            className="object-contain object-center p-2"
+            className="object-cover"
             priority
+            unoptimized
           />
         </div>
 
@@ -71,11 +75,12 @@ export function HeroSection() {
           </p>
           <div className="relative mt-4 h-[182px] overflow-hidden rounded-2xl border border-[#dfd0b2] bg-[#f3ead8]">
             <Image
-              src="/images/wc26/hero-mobile-bg.svg"
+              src={WC26_HERO_MOBILE_SRC}
               alt="Hero mobile World Cup 2026"
               fill
-              className="object-contain object-center p-2"
+              className="object-contain"
               priority
+              unoptimized
             />
           </div>
           <div className="mt-4 flex flex-col gap-2.5">
