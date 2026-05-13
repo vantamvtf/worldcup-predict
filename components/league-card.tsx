@@ -21,10 +21,10 @@ const leagueVisual: Record<string, string> = {
 export function LeagueCard({ league }: LeagueCardProps) {
   return (
     <article className="overflow-hidden rounded-2xl border border-wc-borderSoft bg-white p-0 shadow-sm">
-      <div className={`relative h-[74px] bg-gradient-to-r ${leagueVisual[league.id] ?? "from-[#c2d0c0] to-[#7a9278]"}`}>
+      <div className={`relative h-[68px] bg-gradient-to-r ${leagueVisual[league.id] ?? "from-[#c2d0c0] to-[#7a9278]"}`}>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_30%,rgba(255,255,255,0.45),transparent_45%)]" />
       </div>
-      <div className="space-y-3 p-4">
+      <div className="space-y-2.5 p-3.5">
         <div className="flex items-start justify-between gap-2">
           <h3 className="text-sm font-bold text-wc-textDark">{league.name}</h3>
           <span className="rounded-full border border-[#f1deb6] bg-[#fff6df] px-2 py-0.5 text-xs font-semibold text-[#9f6d0f]">
@@ -35,7 +35,7 @@ export function LeagueCard({ league }: LeagueCardProps) {
         <p className="text-xs text-[#66766a]">{league.memberCount} thành viên</p>
         <p className="text-xs text-[#66766a]">Hạng của bạn: #{league.userRank}</p>
 
-        <button className="white-gold-outline w-full text-xs">Xem league</button>
+        <button className="white-gold-outline h-9 w-full text-xs">Xem league</button>
       </div>
     </article>
   );
