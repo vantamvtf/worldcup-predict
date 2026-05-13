@@ -52,11 +52,11 @@ export function BadgeCard({ badge }: BadgeCardProps) {
   const style = badgeStyle[badge.icon] ?? badgeStyle.spark;
 
   return (
-    <article className="rounded-2xl border border-wc-borderSoft bg-white p-4 text-center shadow-sm">
-      <div className={`mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br ${style.tone}`}>
+    <article className="rounded-2xl border border-wc-borderSoft bg-[#fffdf8] p-3 text-center shadow-sm">
+      <div className={`mx-auto flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br ${style.tone}`}>
         {style.icon}
       </div>
-      <h3 className="mt-2 text-sm font-bold text-wc-textDark">{badge.title}</h3>
+      <h3 className="mt-2 text-[13px] font-bold text-wc-textDark">{badge.title}</h3>
       <p className="mt-1 text-xs text-[#66756a]">{badge.description}</p>
     </article>
   );

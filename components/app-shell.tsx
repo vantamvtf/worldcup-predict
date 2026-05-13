@@ -21,7 +21,7 @@ export function AppShell({ children }: AppShellProps) {
   return (
     <div className="min-h-screen bg-wc-bgWarm text-wc-textDark">
       <header className="sticky top-0 z-30 bg-wc-bgWarm/90 py-3 backdrop-blur">
-        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto w-full max-w-[1460px] px-4 sm:px-6 lg:px-8">
           <div className="hidden h-[68px] items-center rounded-2xl border border-wc-borderSoft bg-white px-5 shadow-nav md:grid md:grid-cols-[auto_1fr_auto] md:gap-4">
             <Link href="/" className="flex items-center">
               <Image
@@ -93,7 +93,7 @@ export function AppShell({ children }: AppShellProps) {
         </div>
       </header>
 
-      <main className="mx-auto w-full max-w-7xl px-4 pb-24 pt-2 sm:px-6 lg:px-8 lg:pb-10">{children}</main>
+      <main className="mx-auto w-full max-w-[1460px] px-4 pb-24 pt-2 sm:px-6 lg:px-8 lg:pb-10">{children}</main>
       <BottomNav />
     </div>
   );
